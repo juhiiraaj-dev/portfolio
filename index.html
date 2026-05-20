@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+        background: #f4f4f4;
+        color: #333;
+    }
+    header {
+        background: #0a0a23;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 2.5rem;
+    }
+    header p {
+        font-size: 1.1rem;
+        opacity: 0.8;
+    }
+    nav {
+        background: #1e1e3f;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px 0;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    nav a:hover {
+        color: #ff9800;
+    }
+    section {
+        max-width: 1100px;
+        margin: auto;
+        padding: 40px 20px;
+    }
+    .about {
+        text-align: center;
+        padding: 50px 20px;
+    }
+    .about img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid #ff9800;
+        margin-bottom: 20px;
+    }
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .skill {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        width: 200px;
+        text-align: center;
+        transition: transform 0.3s;
+    }
+    .skill:hover {
+        transform: scale(1.05);
+    }
+    footer {
+        background: #0a0a23;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        margin-top: 20px;
+    }
+    button {
+        background: #ff9800;
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: background 0.3s;
+    }
+    button:hover {
+        background: #e68900;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>John Doe</h1>
+    <p>Web Developer | Designer | Programmer</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="about">
+    <img src="https://i.pravatar.cc/300" alt="Profile Picture">
+    <h2>About Me</h2>
+    <p>Hello! I'm John, a passionate web developer with a love for clean and functional design. I build user-friendly websites and applications that deliver great experiences.</p>
+</section>
+
+<section id="skills">
+    <h2 style="text-align:center; margin-bottom: 20px;">My Skills</h2>
+    <div class="skills">
+        <div class="skill">
+            <h3>HTML</h3>
+            <p>Creating semantic and accessible structures.</p>
+        </div>
+        <div class="skill">
+            <h3>CSS</h3>
+            <p>Styling with responsive and modern designs.</p>
+        </div>
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <p>Making websites interactive and dynamic.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" style="text-align:center;">
+    <h2>Contact Me</h2>
+    <p>Email: johndoe@example.com</p>
+    <button onclick="alertMessage()">Say Hello</button>
+</section>
+
+<footer>
+    <p>&copy; 2025 John Doe | All Rights Reserved</p>
+</footer>
+
+<script>
+    function alertMessage() {
+        alert("Thank you for visiting my portfolio!");
+    }
+</script>
+
+</body>
+</html>
